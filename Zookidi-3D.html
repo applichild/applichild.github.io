@@ -14,18 +14,20 @@
 			
 		</div>
 		<!-- Slideshow container -->
+		<br>
+		<br>
 		<div class="slideshow-container">
-
+		  <center>
 		  <!-- Full-width images with number and caption text -->
 		  <div class="mySlides fade">
 			<div class="numbertext">1 / 12</div>
-			<img src="Zookidi-Feature.png" style="width:100%">
+			<img src="Zookidi-Feature.png">
 			<div class="text">Some Zookidi Animals</div>
 		  </div>
 		  
 			<div class="mySlides fade">
 			<div class="numbertext">2 / 12</div>
-			<img src="Screenshots/Maze.png" style="width:100%">
+			<img src="Screenshots/Maze.PNG" style="width:100%">
 			<div class="text">Maze Scene</div>
 		  </div>
 
@@ -87,7 +89,7 @@
 			<div class="numbertext">12 / 12</div>
 			<img src="Screenshots/Screenshot_20210505-172449.png" style="width:100%">
 			<div class="text">Duck in Zookidi</div>
-		  </div>
+		  </div></center>
 		  
 		  
 		  <!-- Next and previous buttons -->
@@ -149,6 +151,7 @@
 			<!-- <img src = "Zookidi-Winter.PNG" width="960"> -->
 		</div>
 		<center><iframe width="960" height="540" src="https://www.youtube.com/embed/TP6HuG67xj8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+		<br>
 		<center><iframe width="960" height="540" src="https://www.youtube.com/embed/DBNLvF4cW9w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
 		<center><div class="row">
 		  <div class="column">
@@ -176,13 +179,26 @@
 		<script>
 			var slideIndex = 1;
 			showSlides(slideIndex);
-
+			requestAnimationFrame(loop);
+			changeTimer = 0;
+			previousTimer = 0;
+			function loop(currentTime) {
+			  changeTimer += (currentTime - previousTimer) / 1000;
+			  previousTimer = currentTime;
+			  if (changeTimer > 5){
+				plusSlides(1);
+			  }
+			  requestAnimationFrame(loop);
+			  
+			}
 			function plusSlides(n) {
 			  showSlides(slideIndex += n);
+			  changeTimer = 0;
 			}
 
 			function currentSlide(n) {
 			  showSlides(slideIndex = n);
+			  changeTimer = 0;
 			}
 
 			function showSlides(n) {
@@ -199,6 +215,7 @@
 			  }
 			  slides[slideIndex-1].style.display = "block";  
 			  dots[slideIndex-1].className += " active";
+			  changeTimer = 0;
 			}
 		</script>
 	</body>
