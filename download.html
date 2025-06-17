@@ -1,46 +1,97 @@
-<!DOCTYPE hmtl>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
-		<link rel="stylesheet" href="style.css">
-		<title> Download Zookidi</title>
-	</head>
-	<body>
-		<div class="topnav">
-			<a href="index.html">Home</a>
-			<a class="active" href="download.html">Download</a>
-			<a href="Zookidi-3D.html">Zookidi-3D</a>
-			
+<head>
+	<meta charset="utf-8">
+	<script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<title>Download Zookidi</title>
+	<style>
+		.game-section-container {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 40px;
+			margin-top: 40px;
+			padding: 0 5%;
+		}
+
+		.game-box {
+			text-align: center;
+			border: 1px solid #ccc;
+			padding: 30px;
+			border-radius: 10px;
+			box-shadow: 0 0 15px rgba(0,0,0,0.1);
+			width: 40%;
+			min-width: 300px;
+		}
+
+		.game-box h2 {
+			margin-bottom: 30px;
+			font-size: 1.8em;
+		}
+
+		.download-buttons {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 30px;
+		}
+
+		.download-buttons img {
+			width: 140px;
+		}
+
+		@media (max-width: 768px) {
+			.game-box {
+				width: 90%;
+			}
+			.download-buttons img {
+				width: 120px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="topnav">
+		<a href="index.html">Home</a>
+		<a class="active" href="download.html">Download</a>
+		<a href="Zookidi-3D.html">Zookidi-3D</a>
+		<a href="The-Last-of-Cars.html">The Last of Cars</a>
+	</div>
+
+	<div class="game-section-container">
+		<!-- Zookidi Game -->
+		<div class="game-box">
+			<h2>Zookidi-3D</h2>
+			<div class="download-buttons">
+				<a href="https://play.google.com/store/apps/details?id=com.Applichild.Zookidi">
+					<img src="markets/google-play2.png" alt="Google Play">
+				</a>
+				<a href="https://apps.apple.com/ca/app/zookidi-3d/id1568558690">
+					<img src="markets/app-store.png" alt="App Store">
+				</a>
+				<a href="https://cafebazaar.ir/app/com.Applichild.Zookidi3D">
+					<img src="markets/badge-new.png" alt="Cafe Bazaar">
+				</a>
+			</div>
 		</div>
-		<center><div class="row">
-		  <div class="column">
-		  	<div style="margin: 40px;">
-			    <a href="https://play.google.com/store/apps/details?id=com.Applichild.Zookidi">
-			    	<img src="markets/google-play2.png" style="width:36%">
+
+		<!-- The Last of Cars -->
+		<div class="game-box">
+			<h2>The Last of Cars</h2>
+			<div class="download-buttons">
+				<a href="https://play.google.com/store/apps/details?id=com.AppliFun.TheLastofCars">
+					<img src="markets/google-play2.png" alt="Google Play">
+				</a>
+				<a href="https://apps.apple.com/ca/app/the-last-of-cars/id6736999539">
+					<img src="markets/app-store.png" alt="App Store">
 				</a>
 			</div>
-		  </div>
-		  <div class="column">
-		  	<div style="margin: 40px;">
-			  	<a href="https://apps.apple.com/ca/app/zookidi-3d/id1568558690">
-			    	<img src="markets/app-store.png" style="width:36%">
-				</a>
-			</div>
-		  </div>
-		  <div class="column">
-		  	<div style="margin: 40px;">
-			  	<a href="https://cafebazaar.ir/app/com.Applichild.Zookidi3D">
-			    	<img src="markets/badge-new.png" style="width:36%">
-			    </a>
-			</div>
-		  </div>
-		</div></center>
-		
-	</body>
+		</div>
+	</div>
+</body>
 
-	<footer>
-  		<p style="text-align:center;">&#169 2021 Applichild. </p>
-	</footer>
-
+<footer>
+	<p style="text-align:center;">&#169 2025 AppliFun.</p>
+</footer>
 </html>

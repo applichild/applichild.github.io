@@ -1,0 +1,171 @@
+<!DOCTYPE hmtl>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+		<link rel="stylesheet" href="style.css">
+		<title> Applichild: Applications for your children</title>
+	</head>
+	<body>
+		<div class="topnav">
+			<a href="index.html">Home</a>
+			<a href="download.html">Download</a>
+			<a href="Zookidi-3D.html">Zookidi-3D</a>
+			<a class="active" href="The-Last-of-Cars.html">The Last of Cars</a>
+		</div>
+		<!-- Slideshow container -->
+		<br>
+		<br>
+		<div class="slideshow-container">
+		  <center>
+		  <!-- Full-width images with number and caption text -->
+		  <div class="mySlides fade">
+			<div class="numbertext">1 / 7</div>
+			<img src="The-Last-of-Cars/Feature_resize.png">
+			<div class="text">Feature image showing the cars available</div>
+		  </div>
+		  
+			<div class="mySlides fade">
+			<div class="numbertext">2 / 7</div>
+			<img src="The-Last-of-Cars/ArenaScene_Android_0.png" style="width:100%">
+		  </div>
+
+		  <div class="mySlides fade">
+			<div class="numbertext">3 / 7</div>
+			<img src="The-Last-of-Cars/CirclesScene_Android_0.png" style="width:100%">
+		  </div>
+
+		  <div class="mySlides fade">
+			<div class="numbertext">4 / 7</div>
+			<img src="The-Last-of-Cars/LavaScene_Android_0.png" style="width:100%">
+		  </div>
+		  
+		  <div class="mySlides fade">
+			<div class="numbertext">5 / 7</div>
+			<img src="The-Last-of-Cars/TileScene_Android_0.png" style="width:100%">
+		  </div>
+		  
+		  <div class="mySlides fade">
+			<div class="numbertext">6 / 7</div>
+			<img src="The-Last-of-Cars/StadiumScene_Android_0.png" style="width:100%">
+		  </div>
+		  
+		  <div class="mySlides fade">
+			<div class="numbertext">7 / 7</div>
+			<img src="The-Last-of-Cars/Customization_Spoiler.png" style="width:100%">
+		  </div>
+		  </center>
+		  
+		  
+		  <!-- Next and previous buttons -->
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+
+		<!-- The dots/circles -->
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span>
+		  <span class="dot" onclick="currentSlide(2)"></span>
+		  <span class="dot" onclick="currentSlide(3)"></span>
+		  <span class="dot" onclick="currentSlide(4)"></span>
+		  <span class="dot" onclick="currentSlide(5)"></span>
+		  <span class="dot" onclick="currentSlide(6)"></span>
+		  <span class="dot" onclick="currentSlide(7)"></span>
+		</div>
+		<div class="box">
+			<!-- <img src = "Zookidi-Feature.png" width="960"> -->
+			
+			<h2>🔥 Join the Ultimate Car Battle Royale! 🔥</h2>
+
+			<h5> Experience high-octane action in The Last Car Standing, the ultimate car battle royale and arena survival game.</h5><br>
+
+			<h5>Engage in thrilling car combat, outmaneuver opponents, and be the last car standing in explosive battles.</h5><br>
+
+			<h5>- Intense Car Battles: Dive into fast-paced arena battles where strategy and speed are key.</h5><br>
+
+			<h5>- Battle Royale Mode: Survive massive free-for-all matches and become the ultimate champion.</h5><br>
+			
+			<h5>- Customizable Vehicles: Personalize your ride with extensive car customization options.</h5><br>
+
+			<h5>- Realistic Destruction Physics: Enjoy fully destructible cars with lifelike physics-based collisions.</h5><br>
+
+			<h5>- Diverse Arenas: Fight across 6 unique maps, each with dynamic environments and challenges.</h5><br>
+
+			<h5>- Multiple Game Modes: Play solo or in teams, including a strategic team mode with up to 4 cars.</h5><br>
+
+			<h2>🛠 Customize & Upgrade:</h2>
+			
+			<h5>- Choose from 10 unique cars, each with special abilities and stats.</h5><br>
+			<h5>- Upgrade your vehicles for better performance in the arena.</h5><br>
+			<h5>- Unlock skins, decals, and accessories to make your car stand out.</h5><br>
+
+			
+		</div>
+		<center><iframe width="960" height="540" src="https://www.youtube.com/embed/d92P1WJVGyo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+		<br>
+		<center><div class="row">
+		  <div class="column">
+		  	<div style="margin: 40px;">
+			    <a href="https://play.google.com/store/apps/details?id=com.AppliFun.TheLastofCars">
+			    	<img src="markets/google-play2.png" style="width:36%">
+				</a>
+			</div>
+		  </div>
+		  <div class="column">
+		  	<div style="margin: 40px;">
+			  	<a href="https://apps.apple.com/ca/app/the-last-of-cars/id6736999539">
+			    	<img src="markets/app-store.png" style="width:36%">
+				</a>
+			</div>
+		  </div>
+		</center>
+		<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+			requestAnimationFrame(loop);
+			changeTimer = 0;
+			previousTimer = 0;
+			function loop(currentTime) {
+			  changeTimer += (currentTime - previousTimer) / 1000;
+			  previousTimer = currentTime;
+			  if (changeTimer > 5){
+				plusSlides(1);
+			  }
+			  requestAnimationFrame(loop);
+			  
+			}
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			  changeTimer = 0;
+			}
+
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			  changeTimer = 0;
+			}
+
+			function showSlides(n) {
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("dot");
+			  if (n > slides.length) {slideIndex = 1}    
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+				  slides[i].style.display = "none";  
+			  }
+			  for (i = 0; i < dots.length; i++) {
+				  dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += " active";
+			  changeTimer = 0;
+			}
+		</script>
+	</body>
+
+	<footer>
+  		<p style="text-align:center;">&#169 2025 AppliFun. </p>
+	</footer>
+
+</html>
